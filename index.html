@@ -9,7 +9,6 @@
       Remove all code in `styles.css`!
     -->
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
   </head>
   <body>
     <nav>
@@ -17,7 +16,68 @@
       <a href="/page2.html">Other page</a>
     </nav>
     <main>
-      <h1>Home page</h1>
+      <form action="form.php" method="post" name="htmlform" id="htmlform">
+        <input
+          type="text"
+          name="novalidate"
+          id="novalidate"
+          formnovalidate
+          placeholder="Wont be validated"
+        />
+        <p></p>
+        <input
+          type="text"
+          name="textbox"
+          id="textbox"
+          required
+          placeholder="Text Box"
+        />
+        <p></p>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+        <p></p>
+        <input
+          type="password"
+          name="samepassword"
+          id="samepassword"
+          placeholder="Repeat Password"
+          required
+        />
+        <p></p>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        />
+        <p></p>
+        <input type="radio" name="radiobox" id="radiobox" required /> &nbsp;
+        Radio
+        <p></p>
+        <input type="file" name="filebox" id="filebox" required />
+        <p></p>
+        <select name="selectbox" id="selectbox" required>
+          <option value="">Choose something</option>
+          <option value="1">value 1</option>
+          <option value="2">value 2</option>
+          <option value="3">value 3</option>
+        </select>
+        <p></p>
+        <input type="submit" name="" id="" value="Submit Form" />
+      </form>
     </main>
   </body>
+  <script
+    type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+
+  <script type="module" src="script.js"></script>
 </html>
