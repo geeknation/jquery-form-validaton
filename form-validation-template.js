@@ -1,4 +1,4 @@
-$('#htmlform').validate({
+$('form').validate({
   // Specify validation rules
   rules: {
     // The key name on the left side is the name attribute
@@ -20,7 +20,6 @@ $('#htmlform').validate({
       required: true,
       equalTo: '#password',
     },
-    filebox: {},
   },
   //specify the error message display element
   errorElement: 'span',
@@ -36,7 +35,6 @@ $('#htmlform').validate({
       required: 'Please ensure passwords are a match',
     },
     email: 'Please enter a valid email address',
-    filebox: 'A file is required',
   },
   // Make sure the form is submitted to the destination defined
   // in the "action" attribute of the form when valid
